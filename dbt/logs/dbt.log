@@ -1,0 +1,283 @@
+[0m16:24:42.104119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386b4e4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33878cde80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33869310a0>]}
+
+
+============================== 16:24:42.111877 | f32a6102-d602-47c9-b21a-86dd6a0409ca ==============================
+[0m16:24:42.111877 [info ] [MainThread]: Running with dbt=1.11.10
+[0m16:24:42.113031 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error': 'None', 'target_path': 'None', 'invocation_command': 'dbt build', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'introspect': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'static_parser': 'True', 'log_format': 'default', 'printer_width': '80', 'quiet': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'debug': 'False'}
+[0m16:24:42.114060 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /content/fcbi-staff-data-analyst-portfolio/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:24:42.115950 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.17879383, "process_in_blocks": "21240", "process_kernel_time": 0.357995, "process_mem_max_rss": "130132", "process_out_blocks": "10816", "process_user_time": 4.763669}
+[0m16:24:42.116988 [debug] [MainThread]: Command `dbt build` failed at 16:24:42.116788 after 0.18 seconds
+[0m16:24:42.117852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386fcce30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3389cbb470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f338c26b830>]}
+[0m16:24:42.119301 [debug] [MainThread]: Flushing usage events
+[0m16:24:42.238161 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:12.672227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96dac1c4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96d9e97f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96dcdb6ba0>]}
+
+
+============================== 16:25:12.676859 | b79625f9-d726-41f4-9295-ea6848a84a9b ==============================
+[0m16:25:12.676859 [info ] [MainThread]: Running with dbt=1.11.10
+[0m16:25:12.677689 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'empty': 'False', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt build', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'introspect': 'True', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_path': '/content/fcbi-staff-data-analyst-portfolio/dbt/logs', 'target_path': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'version_check': 'True', 'warn_error': 'None', 'profiles_dir': '/root/.dbt', 'write_json': 'True'}
+[0m16:25:15.849940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b79625f9-d726-41f4-9295-ea6848a84a9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c2109280>]}
+[0m16:25:15.970831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b79625f9-d726-41f4-9295-ea6848a84a9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96d9a85820>]}
+[0m16:25:15.971812 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m16:25:16.193876 [debug] [MainThread]: checksum: 2f247960199844e016e6a527f21364251736722c6212f4b11e96849fe0fc9e96, vars: {}, profile: , target: , version: 1.11.10
+[0m16:25:16.194977 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:25:16.195600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b79625f9-d726-41f4-9295-ea6848a84a9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c167b9b0>]}
+[0m16:25:17.308489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b79625f9-d726-41f4-9295-ea6848a84a9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c13481d0>]}
+[0m16:25:17.372846 [debug] [MainThread]: Wrote artifact WritableManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/manifest.json
+[0m16:25:17.376098 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/semantic_manifest.json
+[0m16:25:17.402877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b79625f9-d726-41f4-9295-ea6848a84a9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c13ecce0>]}
+[0m16:25:17.403709 [info ] [MainThread]: Found 541 macros
+[0m16:25:17.405979 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:25:17.406920 [debug] [MainThread]: Command end result
+[0m16:25:17.439604 [debug] [MainThread]: Wrote artifact WritableManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/manifest.json
+[0m16:25:17.442584 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/semantic_manifest.json
+[0m16:25:17.448132 [debug] [MainThread]: Wrote artifact RunExecutionResult to /content/fcbi-staff-data-analyst-portfolio/dbt/target/run_results.json
+[0m16:25:17.449659 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 4.8846936, "process_in_blocks": "17392", "process_kernel_time": 0.712718, "process_mem_max_rss": "298388", "process_out_blocks": "12872", "process_user_time": 8.970664}
+[0m16:25:17.451212 [debug] [MainThread]: Command `dbt build` succeeded at 16:25:17.450966 after 4.89 seconds
+[0m16:25:17.452085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96da5dede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c1361910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e96c14afcb0>]}
+[0m16:25:17.452922 [debug] [MainThread]: Flushing usage events
+[0m16:25:17.574040 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:53.478438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df2dc4470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df6f14f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df20efce0>]}
+
+
+============================== 16:25:53.484270 | cc4a01b8-465e-43e7-aced-267277ff9e74 ==============================
+[0m16:25:53.484270 [info ] [MainThread]: Running with dbt=1.11.10
+[0m16:25:53.485223 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'warn_error': 'None', 'introspect': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'version_check': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'quiet': 'False', 'log_path': '/content/fcbi-staff-data-analyst-portfolio/dbt/logs', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'fail_fast': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build', 'no_print': 'None'}
+[0m16:25:55.683492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dda463b30>]}
+[0m16:25:55.803262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df2a816d0>]}
+[0m16:25:55.804245 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m16:25:56.008918 [debug] [MainThread]: checksum: 2f247960199844e016e6a527f21364251736722c6212f4b11e96849fe0fc9e96, vars: {}, profile: , target: , version: 1.11.10
+[0m16:25:56.096807 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m16:25:56.097713 [debug] [MainThread]: Partial parsing: added file: fcbi_data_portfolio://models/staging/stg_loan_performance_history.sql
+[0m16:25:56.098266 [debug] [MainThread]: Partial parsing: added file: fcbi_data_portfolio://models/marts/agg_tier_performance_summary.sql
+[0m16:25:56.098719 [debug] [MainThread]: Partial parsing: added file: fcbi_data_portfolio://models/intermediate/int_loan_performance_metrics.sql
+[0m16:25:56.099172 [debug] [MainThread]: Partial parsing: added file: fcbi_data_portfolio://models/staging/stg_loan_origination_data.sql
+[0m16:25:56.631493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd8dc4aa0>]}
+[0m16:25:57.005933 [debug] [MainThread]: Wrote artifact WritableManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/manifest.json
+[0m16:25:57.008988 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/semantic_manifest.json
+[0m16:25:57.036674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd9639e20>]}
+[0m16:25:57.037440 [info ] [MainThread]: Found 4 models, 541 macros
+[0m16:25:57.040317 [info ] [MainThread]: 
+[0m16:25:57.040964 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:25:57.041435 [info ] [MainThread]: 
+[0m16:25:57.042225 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:25:57.047826 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_driiiportfolio'
+[0m16:25:57.048557 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:58.142086 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_driiiportfolio, now list_driiiportfolio_raw)
+[0m16:25:58.143033 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:25:58.394878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd8e92ed0>]}
+[0m16:25:58.395976 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:58.433115 [debug] [Thread-1 (]: Began running node model.fcbi_data_portfolio.stg_loan_origination_data
+[0m16:25:58.434375 [info ] [Thread-1 (]: 1 of 4 START sql view model raw.stg_loan_origination_data ...................... [RUN]
+[0m16:25:58.443420 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_driiiportfolio_raw, now model.fcbi_data_portfolio.stg_loan_origination_data)
+[0m16:25:58.444339 [debug] [Thread-1 (]: Began compiling node model.fcbi_data_portfolio.stg_loan_origination_data
+[0m16:25:58.528439 [debug] [Thread-1 (]: Writing injected SQL for node "model.fcbi_data_portfolio.stg_loan_origination_data"
+[0m16:25:58.532023 [debug] [Thread-1 (]: Began executing node model.fcbi_data_portfolio.stg_loan_origination_data
+[0m16:25:58.623322 [debug] [Thread-1 (]: Writing runtime sql for node "model.fcbi_data_portfolio.stg_loan_origination_data"
+[0m16:25:58.625110 [debug] [Thread-1 (]: On model.fcbi_data_portfolio.stg_loan_origination_data: /* {"app": "dbt", "dbt_version": "1.11.10", "profile_name": "fcbi-staff-data-analyst-portfolio", "target_name": "dev", "node_id": "model.fcbi_data_portfolio.stg_loan_origination_data"} */
+
+
+  create or replace view `driiiportfolio`.`raw`.`stg_loan_origination_data`
+  OPTIONS()
+  as -- models/staging/stg_loan_origination_data.sql
+-- dbt model for cleaning and selecting raw loan origination data
+
+SELECT
+    application_id,
+    customer_id,
+    credit_score,
+    ltv_ratio,
+    loan_amount,
+    tier,
+    interest_rate,
+    origination_date
+FROM
+    `driiiportfolio.raw.loan_origination_data`;
+
+
+[0m16:25:58.626192 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:25:59.489162 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=driiiportfolio&j=bq:US:9d7252e7-9f62-45fc-b86a-b6d9d5d642aa&page=queryresults
+[0m16:26:00.084050 [debug] [Thread-1 (]: SQL status: OK in 0.594 seconds
+[0m16:26:00.230368 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd9b25a30>]}
+[0m16:26:00.233134 [info ] [Thread-1 (]: 1 of 4 OK created sql view model raw.stg_loan_origination_data ................. [[32mCREATE VIEW (0 processed)[0m in 1.78s]
+[0m16:26:00.234640 [debug] [Thread-1 (]: Finished running node model.fcbi_data_portfolio.stg_loan_origination_data
+[0m16:26:00.235622 [debug] [Thread-1 (]: Began running node model.fcbi_data_portfolio.stg_loan_performance_history
+[0m16:26:00.236559 [info ] [Thread-1 (]: 2 of 4 START sql view model raw.stg_loan_performance_history ................... [RUN]
+[0m16:26:00.237600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fcbi_data_portfolio.stg_loan_origination_data, now model.fcbi_data_portfolio.stg_loan_performance_history)
+[0m16:26:00.238429 [debug] [Thread-1 (]: Began compiling node model.fcbi_data_portfolio.stg_loan_performance_history
+[0m16:26:00.242997 [debug] [Thread-1 (]: Writing injected SQL for node "model.fcbi_data_portfolio.stg_loan_performance_history"
+[0m16:26:00.244252 [debug] [Thread-1 (]: Began executing node model.fcbi_data_portfolio.stg_loan_performance_history
+[0m16:26:00.251965 [debug] [Thread-1 (]: Writing runtime sql for node "model.fcbi_data_portfolio.stg_loan_performance_history"
+[0m16:26:00.253484 [debug] [Thread-1 (]: On model.fcbi_data_portfolio.stg_loan_performance_history: /* {"app": "dbt", "dbt_version": "1.11.10", "profile_name": "fcbi-staff-data-analyst-portfolio", "target_name": "dev", "node_id": "model.fcbi_data_portfolio.stg_loan_performance_history"} */
+
+
+  create or replace view `driiiportfolio`.`raw`.`stg_loan_performance_history`
+  OPTIONS()
+  as -- models/staging/stg_loan_performance_history.sql
+-- dbt model for cleaning and selecting raw loan performance history data
+-- This model addresses duplicate snapshots and corrects days_past_due inconsistencies.
+
+SELECT
+    application_id,
+    CAST(report_date AS DATE) AS report_date,
+    status,
+    -- Correct days_past_due based on status
+    CASE
+        WHEN status = 'Current' THEN 0
+        WHEN status = 'Late 30' AND days_past_due > 0 AND days_past_due <= 30 THEN days_past_due
+        WHEN status = 'Late 30' AND days_past_due > 30 THEN 30 -- Cap at 30 for 'Late 30' status
+        WHEN status = 'Late 60' AND days_past_due > 30 AND days_past_due <= 60 THEN days_past_due
+        WHEN status = 'Late 60' AND days_past_due <= 30 THEN 31 -- Ensure > 30 for 'Late 60'
+        WHEN status = 'Late 60' AND days_past_due > 60 THEN 60 -- Cap at 60 for 'Late 60' status
+        WHEN status = 'Default' AND days_past_due > 60 THEN days_past_due
+        WHEN status = 'Default' AND days_past_due <= 60 THEN 61 -- Ensure > 60 for 'Default'
+        ELSE days_past_due -- Fallback for other cases or already correct values
+    END AS days_past_due,
+    balance
+FROM
+    `driiiportfolio.raw.loan_performance_history`
+QUALIFY ROW_NUMBER() OVER (PARTITION BY application_id, report_date ORDER BY report_date DESC) = 1;
+
+
+[0m16:26:00.254682 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:00.752209 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=driiiportfolio&j=bq:US:466f7680-b4dd-4e08-9fb8-08db879fcb69&page=queryresults
+[0m16:26:01.306199 [debug] [Thread-1 (]: SQL status: OK in 0.553 seconds
+[0m16:26:01.309650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd82bfc20>]}
+[0m16:26:01.310662 [info ] [Thread-1 (]: 2 of 4 OK created sql view model raw.stg_loan_performance_history .............. [[32mCREATE VIEW (0 processed)[0m in 1.07s]
+[0m16:26:01.311519 [debug] [Thread-1 (]: Finished running node model.fcbi_data_portfolio.stg_loan_performance_history
+[0m16:26:01.312715 [debug] [Thread-1 (]: Began running node model.fcbi_data_portfolio.int_loan_performance_metrics
+[0m16:26:01.313561 [info ] [Thread-1 (]: 3 of 4 START sql view model raw.int_loan_performance_metrics ................... [RUN]
+[0m16:26:01.314290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fcbi_data_portfolio.stg_loan_performance_history, now model.fcbi_data_portfolio.int_loan_performance_metrics)
+[0m16:26:01.314855 [debug] [Thread-1 (]: Began compiling node model.fcbi_data_portfolio.int_loan_performance_metrics
+[0m16:26:01.319132 [debug] [Thread-1 (]: Writing injected SQL for node "model.fcbi_data_portfolio.int_loan_performance_metrics"
+[0m16:26:01.319999 [debug] [Thread-1 (]: Began executing node model.fcbi_data_portfolio.int_loan_performance_metrics
+[0m16:26:01.323861 [debug] [Thread-1 (]: Writing runtime sql for node "model.fcbi_data_portfolio.int_loan_performance_metrics"
+[0m16:26:01.324929 [debug] [Thread-1 (]: On model.fcbi_data_portfolio.int_loan_performance_metrics: /* {"app": "dbt", "dbt_version": "1.11.10", "profile_name": "fcbi-staff-data-analyst-portfolio", "target_name": "dev", "node_id": "model.fcbi_data_portfolio.int_loan_performance_metrics"} */
+
+
+  create or replace view `driiiportfolio`.`raw`.`int_loan_performance_metrics`
+  OPTIONS()
+  as -- models/intermediate/int_loan_performance_metrics.sql
+-- dbt model for joining staged data and calculating derived metrics
+
+WITH loan_data AS (
+    SELECT
+        orig.application_id,
+        orig.customer_id,
+        orig.credit_score,
+        orig.ltv_ratio AS initial_ltv_ratio,
+        orig.loan_amount,
+        orig.tier,
+        orig.interest_rate,
+        orig.origination_date,
+        perf.report_date,
+        perf.status AS loan_status,
+        perf.days_past_due,
+        perf.balance
+    FROM
+        `driiiportfolio`.`raw`.`stg_loan_origination_data` AS orig
+    INNER JOIN
+        `driiiportfolio`.`raw`.`stg_loan_performance_history` AS perf
+    ON
+        orig.application_id = perf.application_id
+)
+
+SELECT
+    application_id,
+    customer_id,
+    credit_score,
+    initial_ltv_ratio,
+    loan_amount,
+    tier,
+    interest_rate,
+    origination_date,
+    report_date,
+    loan_status,
+    days_past_due,
+    balance,
+    DATE_DIFF(report_date, origination_date, DAY) AS loan_age_days, -- Derived metric: loan_age_days
+    CASE
+        WHEN days_past_due > 0 THEN TRUE
+        ELSE FALSE
+    END AS is_delinquent, -- Derived metric: is_delinquent
+    CASE
+        WHEN days_past_due = 0 THEN 'Good Standing'
+        WHEN days_past_due > 0 AND days_past_due <= 30 THEN 'Late 1-30 Days'
+        WHEN days_past_due > 30 AND days_past_due <= 60 THEN 'Late 31-60 Days'
+        WHEN days_past_due > 60 AND days_past_due <= 90 THEN 'Late 61-90 Days'
+        ELSE 'Default'
+    END AS loan_status_category -- Derived metric: loan_status_category
+FROM
+    loan_data;
+
+
+[0m16:26:01.325688 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:01.971275 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=driiiportfolio&j=bq:US:77a6b766-38d9-4783-b4e1-80fe01778633&page=queryresults
+[0m16:26:02.505282 [debug] [Thread-1 (]: SQL status: OK in 0.533 seconds
+[0m16:26:02.509459 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd836bfe0>]}
+[0m16:26:02.510745 [info ] [Thread-1 (]: 3 of 4 OK created sql view model raw.int_loan_performance_metrics .............. [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m16:26:02.511791 [debug] [Thread-1 (]: Finished running node model.fcbi_data_portfolio.int_loan_performance_metrics
+[0m16:26:02.513101 [debug] [Thread-1 (]: Began running node model.fcbi_data_portfolio.agg_tier_performance_summary
+[0m16:26:02.513928 [info ] [Thread-1 (]: 4 of 4 START sql view model raw.agg_tier_performance_summary ................... [RUN]
+[0m16:26:02.514709 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.fcbi_data_portfolio.int_loan_performance_metrics, now model.fcbi_data_portfolio.agg_tier_performance_summary)
+[0m16:26:02.515269 [debug] [Thread-1 (]: Began compiling node model.fcbi_data_portfolio.agg_tier_performance_summary
+[0m16:26:02.520329 [debug] [Thread-1 (]: Writing injected SQL for node "model.fcbi_data_portfolio.agg_tier_performance_summary"
+[0m16:26:02.521472 [debug] [Thread-1 (]: Began executing node model.fcbi_data_portfolio.agg_tier_performance_summary
+[0m16:26:02.525929 [debug] [Thread-1 (]: Writing runtime sql for node "model.fcbi_data_portfolio.agg_tier_performance_summary"
+[0m16:26:02.527179 [debug] [Thread-1 (]: On model.fcbi_data_portfolio.agg_tier_performance_summary: /* {"app": "dbt", "dbt_version": "1.11.10", "profile_name": "fcbi-staff-data-analyst-portfolio", "target_name": "dev", "node_id": "model.fcbi_data_portfolio.agg_tier_performance_summary"} */
+
+
+  create or replace view `driiiportfolio`.`raw`.`agg_tier_performance_summary`
+  OPTIONS()
+  as -- models/marts/agg_tier_performance_summary.sql
+-- dbt model for aggregating data by tier to support Product Revision analysis
+
+SELECT
+    tier,
+    COUNT(DISTINCT application_id) AS total_volume,
+    ROUND(AVG(initial_ltv_ratio), 4) AS average_ltv,
+    ROUND(AVG(interest_rate), 2) AS average_interest_rate,
+    ROUND(SUM(CASE WHEN is_delinquent THEN 1 ELSE 0 END) * 1.0 / COUNT(application_id), 4) AS delinquency_rate,
+    -- Strategic Flag: Identify tiers needing immediate Product Revision
+    CASE
+        WHEN (SUM(CASE WHEN is_delinquent THEN 1 ELSE 0 END) * 1.0 / COUNT(application_id)) > 0.05
+             AND AVG(initial_ltv_ratio) > 0.85 THEN 'HIGH RISK: REDUCE LTV CAP'
+        WHEN (SUM(CASE WHEN is_delinquent THEN 1 ELSE 0 END) * 1.0 / COUNT(application_id)) < 0.01 THEN 'OPPORTUNITY: EXPAND PRODUCTION'
+        ELSE 'STABLE'
+    END AS strategic_recommendation
+FROM
+    `driiiportfolio`.`raw`.`int_loan_performance_metrics`
+GROUP BY
+    tier
+ORDER BY
+    delinquency_rate DESC;
+
+
+[0m16:26:02.528015 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:03.172960 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=driiiportfolio&j=bq:US:9d50b97a-73d0-49fe-a70e-c0224c8283de&page=queryresults
+[0m16:26:03.651739 [debug] [Thread-1 (]: SQL status: OK in 0.478 seconds
+[0m16:26:03.658114 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc4a01b8-465e-43e7-aced-267277ff9e74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd8373d10>]}
+[0m16:26:03.659693 [info ] [Thread-1 (]: 4 of 4 OK created sql view model raw.agg_tier_performance_summary .............. [[32mCREATE VIEW (0 processed)[0m in 1.14s]
+[0m16:26:03.661154 [debug] [Thread-1 (]: Finished running node model.fcbi_data_portfolio.agg_tier_performance_summary
+[0m16:26:03.664527 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:26:03.665989 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:26:03.666763 [debug] [MainThread]: Connection 'model.fcbi_data_portfolio.agg_tier_performance_summary' was properly closed.
+[0m16:26:03.667674 [info ] [MainThread]: 
+[0m16:26:03.668460 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 6.63 seconds (6.63s).
+[0m16:26:03.671132 [debug] [MainThread]: Command end result
+[0m16:26:03.712645 [debug] [MainThread]: Wrote artifact WritableManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/manifest.json
+[0m16:26:03.715894 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/fcbi-staff-data-analyst-portfolio/dbt/target/semantic_manifest.json
+[0m16:26:03.725216 [debug] [MainThread]: Wrote artifact RunExecutionResult to /content/fcbi-staff-data-analyst-portfolio/dbt/target/run_results.json
+[0m16:26:03.725926 [info ] [MainThread]: 
+[0m16:26:03.726536 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:26:03.727125 [info ] [MainThread]: 
+[0m16:26:03.727651 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m16:26:03.728586 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 10.364281, "process_in_blocks": "1848", "process_kernel_time": 0.719315, "process_mem_max_rss": "308604", "process_out_blocks": "3856", "process_user_time": 7.619306}
+[0m16:26:03.729272 [debug] [MainThread]: Command `dbt build` succeeded at 16:26:03.729129 after 10.37 seconds
+[0m16:26:03.729852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df1c57530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798df1bf2f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798dd9f8f9b0>]}
+[0m16:26:03.730421 [debug] [MainThread]: Flushing usage events
+[0m16:26:03.853287 [debug] [MainThread]: An error was encountered while trying to flush usage events
