@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+fbprophet
+pandas-gbq
+great-expectations
+dbt-bigquery
